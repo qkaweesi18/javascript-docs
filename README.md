@@ -1,4 +1,3 @@
-# javascript-docs
 
 # JavaScript Technical Documentation
 
