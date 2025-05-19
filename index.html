@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Syntax">Syntax</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Events">Events</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a versatile programming language used primarily for web development. It allows developers to create dynamic and interactive web applications.</p>
+            <ul>
+                <li>JavaScript can be used for front-end development with frameworks like React, Angular, and Vue.</li>
+                <li>It is also used for back-end development with Node.js.</li>
+                <li>JavaScript is high-level and interpreted.</li>
+                <li>It supports dynamic typing.</li>
+                <li>Prototype-based object orientation is a key feature.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>The syntax of JavaScript is the set of rules that define a correctly structured JavaScript program. Here are some basic elements:</p>
+            <ul>
+                <li>Statements: JavaScript programs are made up of statements.</li>
+                <li>Variables: Used to store data values.</li>
+                <li>Operators: Used to perform arithmetic on variables and values.</li>
+                <li>Functions: A block of code designed to perform a particular task.</li>
+                <li>Objects: Collections of properties and methods.</li>
+            </ul>
+            <code>
+                // This is a single line comment<br>
+                /* This is a multi-line comment */<br>
+                var x = 5; // Variable declaration<br>
+                let y = 6; // Variable declaration (ES6)<br>
+                const z = 7; // Constant declaration (ES6)<br>
+            </code>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables are containers for storing data values. In JavaScript, you can declare variables using <code>var</code>, <code>let</code>, and <code>const</code>.</p>
+            <p>The <code>var</code> keyword is used in older code and has function scope, while <code>let</code> and <code>const</code> are block-scoped.</p>
+            <p>Example:</p>
+            <code>
+                var a = 10;<br>
+                let b = 20;<br>
+                const c = 30;<br>
+            </code>
+            <ul>
+                <li><code>var</code> is function-scoped and can be re-declared and updated.</li>
+                <li><code>let</code> is block-scoped and can be updated but not re-declared within the same scope.</li>
+                <li><code>const</code> is block-scoped and cannot be updated or re-declared.</li>
+                <li>Variables declared with <code>var</code> are hoisted to the top of their scope.</li>
+                <li>Variables declared with <code>let</code> and <code>const</code> are not initialized until their definition is evaluated.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of code designed to perform particular tasks. They are executed when "called" (invoked).</p>
+            <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses ().</p>
+            <p>Example:</p>
+            <code>
+                function myFunction(p1, p2) {<br>
+                    return p1 * p2; // The function returns the product of p1 and p2<br>
+                }<br>
+            </code>
+            <ul>
+                <li>Functions allow you to reuse code.</li>
+                <li>Functions can take parameters and return values.</li>
+                <li>Functions can be defined using the function declaration or function expression syntax.</li>
+                <li>Arrow functions provide a shorter syntax and do not have their own <code>this</code> context.</li>
+                <li>Functions can be called with different numbers of arguments than they were declared to accept.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Events">
+            <header>Events</header>
+            <p>JavaScript can "react" to events, like when a user clicks on a webpage element.</p>
+            <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+            <p>Example:</p>
+            <code>
+                <button onclick="displayDate()">Click me to display Date and Time.</button><br>
+                function displayDate() {<br>
+                    document.getElementById("demo").innerHTML = Date();<br>
+                }<br>
+            </code>
+            <ul>
+                <li>Common events include clicks, mouse movements, and keyboard presses.</li>
+                <li>Event listeners can be added to HTML elements using the <code>addEventListener</code> method.</li>
+                <li>Events can be triggered manually using the <code>dispatchEvent</code> method.</li>
+                <li>Event propagation can be controlled using <code>stopPropagation</code> and <code>preventDefault</code>.</li>
+                <li>Event delegation is a technique for handling events efficiently.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
